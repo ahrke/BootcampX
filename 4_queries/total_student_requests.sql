@@ -1,0 +1,1 @@
+SELECT count (*) as total_requests, s.name FROM assistance_requests r JOIN students s ON s.id = r.student_id WHERE s.name = 'Elliot Dickinson' GROUP BY s.name;

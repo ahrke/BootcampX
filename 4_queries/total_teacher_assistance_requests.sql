@@ -1,0 +1,1 @@
+SELECT count (*) as total_assistances, t.name FROM assistance_requests a JOIN teachers t ON a.teacher_id = t.id WHERE t.name = 'Waylon Boehm' GROUP BY t.name;
